@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Loading from "../Loading/Loading";
+
 
 const Packages = () => {
   const packages = [
@@ -11,17 +11,18 @@ const Packages = () => {
     {
       id: 2,
       title: "Super",
-      images: "https://i.ibb.co/tCxFT2q/image.png",
+      images: "https://i.ibb.co/TBR75Hw/image.png",
     },
     {
       id: 3,
       title: "Premium",
-      images: "https://i.ibb.co/TBR75Hw/image.png",
+      
+      images: "https://i.ibb.co/tCxFT2q/image.png",
     },
     {
       id: 4,
       title: "Super Premium",
-      images: "https://i.ibb.co/TBR75Hw/image.png",
+      images: "https://i.ibb.co/Qc9Spqx/10614764-removebg-preview.png",
     },
   ];
 
@@ -38,14 +39,14 @@ const Packages = () => {
                 <img
                   src={data.images}
                   alt={data.title}
-                  className="rounded-xl "
+                  className="rounded-xl h-32"
                 />
               </figure>
               <div className="card-body items-center text-center p-4 lg:p-6">
                 <h1 className="card-title text-white">{data.title}</h1>
                 <p className="text-white">If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions">
-                  <button className="btn bg-transparent hover:bg-transparent text-white my-5">
+                  <button className="btn bg-transparent hover:bg-[#b69d74] text-white my-5">
                     <Link to="/coming-soon">View Details</Link>
                   </button>
                 </div>

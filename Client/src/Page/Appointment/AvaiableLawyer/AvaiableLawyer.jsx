@@ -22,7 +22,7 @@ const AvaiableLawyer = () => {
                 <div key={lawyer._id}>
                     <Link to={`/lawyardetails/${lawyer._id}`}>
                         <div className="w-[300px]  shadow-xl m-20">
-                            <figure ><img src={lawyer.image} alt="Shoes" className="w-[300px] h-[350px]" /></figure>
+                            <figure ><img src={lawyer.image} alt="" className="w-full h-72" /></figure>
                             <div className="flex flex-col items-center justify-center  z-10 ">
                                 <div className="bg-[#343a40]  rounded-3xl -mt-7 flex gap-4 p-5 items-center justify-center">
 
@@ -35,7 +35,9 @@ const AvaiableLawyer = () => {
                                 {lawyer.name}
                                 </h2>
                                 <p className=" my-3">{lawyer.specialization}</p>
-
+                                <button className="btn bg-black hover:bg-transparent text-white my-5">
+                    <Link to="/coming-soon">View Details</Link>
+                  </button>
                             </div>
                         </div>
                     </Link>

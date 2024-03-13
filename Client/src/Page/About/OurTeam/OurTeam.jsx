@@ -59,7 +59,7 @@ const OurTeam = () => {
         },
     ]
     const TeamMemberCard = ({ team }) => (
-        <div className="card w-96 h-full  shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#b69d74]">
+        <div className="card w-72  h-full  shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#b69d74]">
           <figure className="px-10 pt-10">
             <img src={team.image} alt={team.name} className="rounded-xl  h-48" />
           </figure>
@@ -73,7 +73,7 @@ const OurTeam = () => {
     return (
         <div className="flex justify-center bg-[#f5f1f1] items-center flex-col my-10">
         <h1 className="text-black bg-[#f5f1f1] text-3xl font-bold  p-3 rounded-2xl"> Lex.Ai Team</h1>
-        <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+        <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-14">
           {ourteam.map((team) => (
             <div className="card" key={team.id}>
               <TeamMemberCard team={team} />
